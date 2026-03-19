@@ -23,32 +23,32 @@ import img23 from "./images/Moa-Lisa-Expensive.jpg";
 import img24 from "./images/background-niceeeee.png";
 import img25 from "./images/logo 3.png";
 import img26 from "./images/dreamina2222222222222211-10-2557-A wide-angle, zoomed-out shot of a moder....png";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 
 import React, { useRef } from "react";
 const Web = () => {
-  const form = useRef();
+  // const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_yz97new",
-        "template_uyqwf8s",
-        form.current,
-        "X1baew3N7fERyrB91",
-      )
-      .then(
-        () => {
-          alert("Email sent successfully:");
-          form.current.reset();
-        },
-        (error) => {
-          alert("Error sending email:", error.text);
-        },
-      );
-  };
+  //   emailjs
+  //     .sendForm(
+  //       "service_yz97new",
+  //       "template_uyqwf8s",
+  //       form.current,
+  //       "X1baew3N7fERyrB91",
+  //     )
+  //     .then(
+  //       () => {
+  //         alert("Email sent successfully:");
+  //         form.current.reset();
+  //       },
+  //       (error) => {
+  //         alert("Error sending email:", error.text);
+  //       },
+  //     );
+  // };
   return (
     <div>
       <nav className="nav1">
@@ -664,7 +664,7 @@ const Web = () => {
             {/* ///////////////////////// */}
             {/* ///////////////////////// */}
             {/* ///////////////////////// */}
-            <form ref={form} onSubmit={sendEmail}>
+            <form>
               {/* ///////////////////////// */}
               {/* ///////////////////////// */}
               {/* ///////////////////////// */}
